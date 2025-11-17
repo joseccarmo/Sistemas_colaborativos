@@ -1,0 +1,11 @@
+streamlit
+python-dotenv
+pypdf
+fpdf
+langchain
+langchain-community
+faiss-cpu
+openai
+tiktoken
+uuid
+langchain_chroma
