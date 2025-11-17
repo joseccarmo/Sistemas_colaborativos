@@ -29,5 +29,5 @@ python -m streamlit run .\collab_streamlit_app.py
 1. adicione um PDF
 2. clique em Build/Update Index
 3. escolha um usuario
-4. Utilize o char normalmente
+4. Utilize o chat normalmente
 5. Caso queira confirmacao para fazer alguma alteracao utilize a votacao de prompt
