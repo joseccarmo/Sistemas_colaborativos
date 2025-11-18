@@ -14,6 +14,14 @@ O cenário escolhido foi um de produção textual, onde os humanos colaboram ent
 Inicialmente, os usuários delimitam temas, escopos e apresentam pesquisas prévias que serviram como base de dados para o RAG. 
 Através do arquivo inicial e da proposta de texto a ser criado, o LLM faz pesquisas nos dados e gera um rascunho, que pode ser vetado ou aprovado através de uma votação realizada pelos colaboradores.
 
+```mermaid
+graph TD;
+  start[START]-- Research --> call_llm[Call LLM];
+  call_llm-- Write --> retriever[Retriever];
+  retriever-- Rewrite --> retriever;
+  retriever-- Consensus --> END;
+```
+
 ## Instalacao
 ```
 pip install -r requirements.txt
@@ -31,3 +39,5 @@ python -m streamlit run .\collab_streamlit_app.py
 3. escolha um usuario
 4. Utilize o chat normalmente
 5. Caso queira confirmacao para fazer alguma alteracao utilize a votacao de prompt
+
+
